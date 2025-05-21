@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Modern Personal Portfolio</title>
+   <link href="style.css" rel="stylesheet" />
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="#profile" tabindex="1">Profile</a></li>
+      <li><a href="#education" tabindex="2">Education</a></li>
+      <li><a href="#trainings" tabindex="3">Trainings</a></li>
+      <li><a href="#projects" tabindex="4">Projects</a></li>
+      <li><a href="#experience" tabindex="5">Job Experience</a></li>
+      <li><a href="#contact" tabindex="6">Contact Us</a></li>
+    </ul>
+  </nav>
+
+ 
+  <section id="profile" class="container fade-in" tabindex="0" aria-label="Profile section">
+    <img src="download (1).jpg" alt="Profile picture" id="profile-pic" />
+    <h1>REYVEN EARL U TABURA</h1>
+    <p>Passionate Front-End Developer crafting beautiful and responsive web experiences.</p>
+  </section>
+
+  <section id="trainings" class="container fade-in" tabindex="0" aria-label="Trainings and Seminars section">
+    <h2>Trainings & Seminars</h2>
+    <div class="card-list">
+      <div class="card" tabindex="0" 
+           data-title="S.T.O.P Training" 
+           data-desc="A 3-days Training STOP Completed.">
+        <h3>S.T.O.P Traiing</h3>
+        <small>A 3-days Training STOP Completed</small>
+      </div>
+      
+     
+    </div>
+  </section>
+
+  
+  <section id="projects" class="container fade-in" tabindex="0" aria-label="Projects section">
+    <h2>Projects</h2>
+    <div class="card-list">
+      <div class="card" tabindex="0" 
+           data-title="Portfolio Website" 
+           data-desc="Developed a responsive and interactive personal portfolio website with animations and smooth navigation.">
+        <h3>Portfolio </h3>
+        <small>portfolio project</small>
+      </div>
+      <div class="card" tabindex="0" 
+           data-title="My Project" 
+           data-desc="Built a scalable e-commerce platform with product filtering, cart, and payment integration.">
+        <h3>Create Portfolio Project</h3>
+        <small>My project</small>
+      </div>
+        
+  </section>
+
+
+  <section id="experience" class="container fade-in" tabindex="0" aria-label="Job experience section">
+    <h2>Job Experience</h2>
+    <div class="card-list">
+      <div class="card" tabindex="0" 
+           data-title="assemble disassemble system unit" 
+           data-desc="CSS, Networking Animation.">
+        <h3>Assemble Disassemble System Unit</h3>
+      </div>
+    
+  </section>
+
+ 
+  <section id="contact" class="container fade-in" tabindex="0" aria-label="Contact us section">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate aria-label="Contact form">
+      <label for="nameInput">Name</label>
+      <input type="text" id="nameInput" name="name" required minlength="2" placeholder="Your full name" aria-required="true" />
+      <label for="emailInput">Email</label>
+      <input type="email" id="emailInput" name="email" required placeholder="example@mail.com" aria-required="true" />
+      <label for="messageInput">Message</label>
+      <textarea id="messageInput" name="message" rows="4" required minlength="10" placeholder="Your message here..." aria-required="true"></textarea>
+      <button type="submit" aria-label="Send message">Send</button>
+      <div id="form-message" role="alert" aria-live="polite" tabindex="0"></div>
+    </form>
+  </section>
+
+  
+  <div class="modal-bg" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc" tabindex="-1">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close modal" id="modalCloseBtn">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  
+  <button id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">&#8679;</button>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
